@@ -1,8 +1,8 @@
 import { ACTIONS } from "./types";
 import { all } from "@redux-saga/core/effects";
 import { plannerSaga} from "./saga";
-
-const initialState = {
+import { AppState } from "./types";
+const initialState: AppState = {
     noOfParticipants : "",
     actvities : [],
     participants : []
