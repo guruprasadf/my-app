@@ -29,6 +29,7 @@ for (let i = 1; i <= noOfParticipants; i++) {
   <Grid item padding={"6px"}>
   <TextField id="outlined-basic" label={`Participant ${i}`} variant="outlined" 
    onChange={(e)=>handleNameChange(e, i-1)}
+   inputProps={{maxLength: 20}}
   />
   </Grid>);
 }
